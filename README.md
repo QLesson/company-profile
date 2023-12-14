@@ -112,7 +112,7 @@ thanks for all contributors ❤
         </a>
       </td>
       <td align='center'>
-        <a href='https://github.com/Rizkyrq'>
+        <a href='https://github.com/Rizkirq'>
           <img src='https://avatars.githubusercontent.com/Rizkyrq' width=100 />
           <br />
           <sub><b>Rizki Maulana</b></sub>
