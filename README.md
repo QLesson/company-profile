@@ -1,3 +1,6 @@
+- do not remove our readme!
+- this branch for team slicing home page
+
 # QLesson Company Profile
 Website Company Profile QLesson dengan jumlah anggota 16 orang yang berdiri pada hari Jum'at, 13 Oktober 2023
 
