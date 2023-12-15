@@ -12,14 +12,14 @@ Cek branch in this repository and git pull for contributing. First git checkout 
 
 ## Stuktur Folder Development
     .
-    ├── public              # root page, logo, icons, and all svg
-        └── images          # all img ex: bg.jpg, people.png ...
+    ├── public/             # root page, logo, icons, and all svg
+        └── images/         # all img ex: bg.jpg, people.png ...
         └── index.html      # root page
-    ├── src
-        ├── css             # all style place in here
-        ├── js              # all javascript place in here
-        ├── scss (optional) # all scss place in here
-        └── pages           # different page place in here
+    ├── src/
+        ├── css/             # all style place in here
+        ├── js/              # all javascript place in here
+        ├── scss/ (optional) # all scss place in here
+        └── pages/           # different page place in here
 
 If you are confused about the folder structure above, please [contact our leader](https://wa.me/+6285798257393)
 
