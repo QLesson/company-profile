@@ -1,0 +1,155 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+$text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$text-color: #303030;
+$text-accent-color: #aaaaaa;
+$primary-color: #2b8fba;
+$primary-accent-color: #81cdee;
+$secondary-color: #b4539a;
+$secondary-accent-color: #e788cd;
+
+*,
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.navbar {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  &.backdrop {
+    background-color: #aaaaaa88;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+}
+
+.nav-link {
+  text-shadow: $text-shadow;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-offcanvas {
+  display: block;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("../assets/images/Process_Laminasi 8RP_8RP_DSCF0070.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .btn {
+    position: absolute;
+    bottom: 20px;
+    background-color: $primary-color;
+
+    &:hover {
+      border: none;
+      background-color: $primary-accent-color;
+    }
+  }
+}
+
+#about {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      text-align: justify;
+    }
+
+    h2 {
+      text-shadow: $text-shadow;
+      position: relative;
+    }
+
+    h2.visi::before,
+    h2.misi::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      height: 3px;
+      width: calc(100% - 10px);
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      background-color: $primary-color;
+      transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      -o-transform: translate(-50%);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    .nav-link {
+      text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: calc(100% / 2.5);
+        bottom: 5px;
+        right: 50%;
+        transform: translate(50%);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        background-color: $secondary-color;
+        -webkit-transform: translate(50%);
+        -moz-transform: translate(50%);
+        -ms-transform: translate(50%);
+        -o-transform: translate(50%);
+        transition: 0.3s, translate 0s 0.3s;
+        -webkit-transition: 0.3s, translate 0s 0.3s;
+        -moz-transition: 0.3s, translate 0s 0.3s;
+        -ms-transition: 0.3s, translate 0s 0.3s;
+        -o-transition: 0.3s, translate 0s 0.3s;
+        scale: 0;
+      }
+
+      &:hover::before {
+        scale: 1;
+      }
+
+      &.active {
+        color: $primary-color;
+
+        &::before {
+          scale: 1;
+        }
+
+        &:hover {
+          filter: brightness(1.1);
+          -webkit-filter: brightness(1.1);
+        }
+      }
+    }
+
+    .btn-offcanvas {
+      display: none;
+    }
+  }
+}
