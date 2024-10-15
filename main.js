@@ -1,5 +1,5 @@
 function hello() {
-  alert("hello world!");
+  alert("hello github!");
 }
 
 hello();
