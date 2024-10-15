@@ -1,1 +1,5 @@
-console.log('Hello github!')
+function hello() {
+  alert("hello world!");
+}
+
+hello();
